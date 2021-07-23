@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+  /* base styles */
+  * {
+    margin: 0;
+    font-family: "Quicksand";
+    font-size: large;
+    color: #333;
+  }
+
+  /*********************************   NAVBAR **********************************/
+  .navbar {
+    width: 80vw !important;
+    height: 15vh !important;
+    margin: 0 auto !important;
+    /*background-color: transparent !important;*/
+    background-color: rgba(255, 255, 255) !important;
+    padding: 20px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .navbar img{
+    width: 10vw !important;
+  }
+
+  .links {
+    display: flex !important;
+    list-style: none !important;
+  }
+
+  .links li{
+    padding-left: 3.0rem !important;
+  }
+
+  .navbar a {
+    font-weight: bolder !important;
+    color:  black !important;
+    font-size: 1.5rem !important;
+    text-decoration: none !important;
+  }
+
+  .navbar a:hover {
+    color: #e29e0c !important;
+  }
+  /*******************************************************************/
+
+  /********************************* iMAGEM DE FUNDO **********************************/
+  .background-app{
+    /*background-image: url("background.jpg");*/
+    background-color: rgba(243, 130, 38, 0.5) !important;
+    /*background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;*/
+  }
+  /*******************************************************************************/
+
+
+  /*********************************** BUTÕES ***********************************/
+  Button {
+    background-color: #f19035 !important;
+    border-radius: 5px !important;
+    border: 0 !important;
+    height: 40px;
+    cursor: pointer !important;
+    color: #ffffff !important;
+    font-family: Arial !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    align-items: center;
+    margin-left: 10px !important;
+  }
+
+  Button:hover {
+    background:linear-gradient(to bottom, #f0a638 5%, #f0a638 100%) !important;
+    background-color: #f0a638 !important;
+  }
+
+  Button:active {
+    position: relative !important;
+    top: 1px !important;
+  }
+  /*******************************************************************************/
+
+
+  /******************************* PACIENTES ******************************************/
+
+
+  .patient-preview{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: Center !important;
+    padding: 20px 100px !important;
+    margin: 15px 80px !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    line-height: 50px !important;
+    letter-spacing: 3px !important;
+    column-count: 2 !important;
+    border-radius: 5px !important;
+    
+  }
+  .patient-preview:hover{
+    color: #fff !important;
+    box-shadow: 8px 8px 5px !important;
+  }
+
+  .patient-preview h1{
+    font-size: 20px !important;
+    color: #000000 !important;
+    margin-bottom: 8px !important;
+    font-weight: bolder !important;
+    margin-right: 10rem;
+
+  }
+
+  .patient-preview a{
+    text-decoration: none !important;
+  }
+
+  .patient-details-container, .maketest-container{
+    width: 100% !important;
+    height: 75% !important;
+    display: flex !important;
+    justify-content: center !important;
+    overflow: hidden;
+  }
+
+  .patient-details, .test-details, .maketest-info{
+    width: 80% !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    color: #fff !important;
+    box-shadow: 10px 10px 5px !important;
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+
+  .patient-details-name, .test-details-name{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    font-weight: bold;
+  }
+
+  .patient-details h4, .test-details h4, .maketest-info h4 {
+    padding-bottom: 1rem;
+    display: flex;
+  }
+
+  .patient-details h5, .patient-info-container,.test-info-container, .test-details h5 {
+    padding-left: 1.5rem;
+  }
+
+  .patient-info-exams {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+  }
+
+  .patient-info, .test-info{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+  }
+
+  .patient-details-buttons, .test-details-buttons, .maketest-info-buttons {
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .createPatient label {
+    text-align: left !important;
+    display: block !important;
+    font-family: arial !important;
+    font-size: 20px !important;
+  }
+
+  .createPatient h2 {
+    font-size: 35px !important;
+    color: #f19035 !important;
+    margin-bottom: 30px !important;
+  }
+
+  .createPatient input, .createPatient textarea, .createPatient select {
+    width: 100% !important;
+    padding: 6px 10px !important;
+    font-family: arial !important;
+    margin: 10px 0 !important;
+    border: 1px solid rgb(161, 161, 161) !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    background-color: #fff !important;
+  }
+
+
+  .patient-csv{
+    width: 50% !important;
+    height: 30% !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    color: #fff !important;
+    box-shadow: 10px 10px 5px !important;
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+  /*******************************************************************************/
+
+
+
+  /*********************************** TESTES *****************************************/
+
+  .test-preview {
+    display: flex;
+    align-items: baseline;
+    justify-content : space-evenly;
+    padding: 20px 100px !important;
+    margin: 15px 80px !important;
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    line-height: 50px !important;
+    letter-spacing: 3px !important;
+    column-count: 2 !important;
+    border-radius: 5px !important;
+  
+  }
+  .test-preview:hover {
+    color: #fff !important;
+    box-shadow: 8px 8px 5px !important;
+  }
+  .test-preview h1 {
+    flex-grow: 10;
+    font-size: 20px !important;
+    color: #000000 !important;
+    margin-bottom: 8px !important;
+    font-weight: bolder !important;
+    margin-right: 10rem;
+
+  }
+  .test-preview a {
+    text-decoration: none !important;
+  }
+  .test-preview img { 
+    flex-grow: 1;
+    align-self: flex-end;
+    width: 170px;
+    height: 70px;
+    padding-right: 1rem;
+  }
+  .test-preview a {
+    text-decoration: none !important;
+  }
+
+  .test-details-container{
+    width: 100% !important;
+    height: 98% !important;
+    display: flex !important;
+    justify-content: center !important;
+    overflow: hidden;
+  }
+
+
+  .test-info-exams {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+  }
+  .test-info-exams h5 {
+    word-break: break-word;
+  }
+
+  .test-details-image{
+    padding-bottom: 1rem !important;
+    display: flex;
+    
+    padding-left: 1.5rem;
+  }
+
+  .test-details-image img{
+    width: 170px;
+    height: 70px;
+  }
+  /*******************************************************************************/
+
+
+
+  /******************************** CRIAR *******************************************/
+  .content {
+    height: 150vh !important;
+    width: 80.7% !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: auto;
+    overflow: hidden;
+    padding-top: 2.5rem;
+  }
+
+  .create {
+    width: 40vw !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  .create label {
+    text-align: left !important;
+    display: block !important;
+    font-family: arial !important;
+    font-size: 20px !important;
+  }
+  .create h2 {
+    font-size: 35px !important;
+    color: #f19035 !important;
+    margin-bottom: 30px !important;
+  }
+  .create input, .create textarea, .create select {
+    width: 100% !important;
+    padding: 6px 10px !important;
+    font-family: arial !important;
+    margin: 10px 0 !important;
+    border: 1px solid rgb(161, 161, 161) !important;
+    box-sizing: border-box !important;
+    display: block !important;
+    background-color: #fff !important;
+  }
+
+  .createPatient, .createTest{
+    width: 85vh;
+    height: 100vh !important;
+    padding-top: 2.5rem;
+    background-color: white  !important;
+    border-radius: 5px !important;
+    line-height: 30px !important;
+
+  }
+  /*******************************************************************************/
+
+  .maketest-info {
+    width: 90% !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    /*padding: 5px 5px !important;*/
+    color: #fff !important;
+    box-shadow: 10px 10px 5px !important;
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+
+  }
+
+  .maketest-info .maketest-title h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    font-weight: bolder;
+  }
+
+  .maketest-inline {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3rem;
+  }
+
+  .maketest-inline h5 {
+    padding-right: 8rem;
+  }
+
+  .maketest-inline select, .maketest-results-duration{
+    width: 13rem;
+    border-radius: 6px;
+    background-color: white;
+  }
+
+  .maketest-answer{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .maketest-answer textarea {
+    width: 90% !important;
+    border-radius: 6px;
+    background-color: white;
+  }
+
+
+  .maketest-imgpreview {
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .maketest select {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #60666d;
+  }
+
+  .maketest textarea{
+    width: 500px;
+    height: 100px;
+    background-color: white !important;
+    padding: 10px 10px !important;
+    border-radius: 5px !important;
+    line-height: 30px !important;
+  }
+
+  .maketest-results-container h5{
+    padding-top: 2rem;
+  }
+
+  .maketest-results{
+    display: flex;
+    flex-direction: column;
+    padding-left: 4rem;
+  }
+
+  .maketest-results-duration-container p, .maketest-results-wrongs p, .maketest-results-omitted p,
+  .maketest-results-repeated p, .maketest-results-change p, .maketest-results-others p {
+    font-weight: bold;
+    padding-right: 1rem;
+  }
+
+  .maketest-results-duration-container, .maketest-results-omitted,.maketest-results-wrongs, .maketest-results-repeated,
+  .maketest-results-change, .maketest-results-others{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+  }
+
+
+  .maketest-results-wrongs input, .maketest-results-omitted input, .maketest-results-repeated input,
+  .maketest-results-change input, .maketest-results-others input {
+    height: 2rem;
+    width: 2.8rem;
+    text-align: center;
+  }
+  
+  .maketest-solution{
+    flex-wrap: wrap-reverse;
+  }
+
+  .maketest-test-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .maketest-test-image img {
+    width: 900px;
+  }
+
+  .maketest-info-buttons a {
+    text-decoration: none !important;
+  }
+
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  .evaluate-container {
+    width: 100% !important;
+    height: 95% !important;
+    display: flex !important;
+    justify-content: center !important;
+    overflow: hidden;
+  }
+
+  .maketest-answer-attempt{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subseqs-container{
+    width: 90% !important;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+
+  .subseqs-container .subseqs-table {
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 100%;
+  }
+
+  .subseqs-container .subseqs-table td, #subseqs-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  .subseqs-container .subseqs-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .subseqs-container .subseqs-table tr:hover {
+    background-color: #ddd;
+  }
+
+  .subseqs-container .subseqs-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: orange;
+    color: white;
+  }
+
+  .maketest-results-omerrtropermout-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+

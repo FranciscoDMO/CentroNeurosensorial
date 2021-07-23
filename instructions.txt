@@ -1,0 +1,11 @@
+1º instalar todos os packages necessários
+	- para node 
+	- para venv/flask (requirements.txt)
+
+2º para correr a aplicação são necessários 2 terminais:
+	- num primeiro terminal fazer: cd app -> yarn start
+	- depois de abrir o projeto react , no segundo terminal fazer yarn start-api
+
+Acho que é tudo
+
+Na pasta app/api está tudo relacionado com a parte backend(flask)

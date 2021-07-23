@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@media screen and (max-width: 1400px) and (max-height: 800px){
+    .content {
+        height: 150vh !important;
+        width: 80% !important;
+    }
+
+    .patient-details-container {
+        height: 50% !important;
+    }
+
+    .test-details-container {
+        height: 80% !important;
+    }
+
+    .maketest-container {
+        width: 80% !important;
+        height: 90% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .maketest-info h2 {
+        display: flex !important;
+        justify-content: center !important;
+        font-weight: bolder !important;
+    }
+}
