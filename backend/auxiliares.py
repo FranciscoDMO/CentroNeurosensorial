@@ -64,6 +64,7 @@ def removing_special_characters(text):
     #app.logger.info("ENTROU NO REMOVING")
     colours = ["azul", "amarelo", "vermelho", "verde", "preto", "roxo", "laranja", "branco"]
     geometric_forms = ["triângulo", "retângulo", "quadrado", "círculo"]
+    numbers = ["um" ,"dois","três","quatro","cinco","seis","sete","oito" , "nove"]
 
     text = ''.join([str(elem) for elem in text]).lower()
     if text[-1] != "." or text[-1] != " ":
@@ -108,8 +109,29 @@ def removing_special_characters(text):
                     if textJoin == "azui":
                         textJoin = "azul"
 
+                    if textJoin == "1":
+                        textJoin = "um"
+                    elif textJoin == "2":
+                        textJoin= "dois"
+                    elif textJoin == "3":
+                        textJoin= "três"
+                    elif textJoin == "4":
+                        textJoin= "quatro"
+                    elif textJoin == "5":
+                        textJoin= "cinco"
+                    elif textJoin == "6":
+                        textJoin= "seis"
+                    elif textJoin == "7":
+                        textJoin= "sete"
+                    elif textJoin == "8":
+                        textJoin= "oito"
+                    elif textJoin == "9":
+                        textJoin= "nove"
                     if textJoin in colours:
                         result.append(textJoin)
+                    if textJoin in numbers :
+                        result.append(textJoin)
+                        
                 i = i + 1
             else:
                 i = i + 1
