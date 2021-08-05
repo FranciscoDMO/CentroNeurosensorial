@@ -9,6 +9,19 @@ def algoritmo(sol, ans):
     exchange = 0
     other = 0
 
+    if(len(sol)==1):
+        sol=removing_special_characters(sol)
+        if(sol[0]==ans[0]):
+            currsubseq.append(ans[j])
+            currsubseq.insert(0, "!")
+            seqs.append(currsubseq)
+            return (ommited, wrongs, repeated, exchange, other, seqs)
+        else : 
+            currsubseq.insert(0, "!")
+            seqs.append(currsubseq)
+            return (ommited, 1, repeated, exchange, other,seqs)
+
+
     while i < len(sol) and j < len(ans):
         if sol[i] == ans[j]:
             currsubseq.append(ans[j])
@@ -53,6 +66,7 @@ def algoritmo(sol, ans):
 
     if i < len(sol):
         ommited += len(sol) - i - 1
+    
     currsubseq.insert(0, "!")
     seqs.append(currsubseq)
     
