@@ -8,6 +8,13 @@ def algoritmo(sol, ans):
     repeated = 0
     exchange = 0
     other = 0
+    
+    #quando tamano == 1 verifica para numeros 
+    if(len(sol)==1 and len(ans) ==1):
+        if(sol[0]==ans[0]):
+            return (ommited, wrongs, repeated, exchange, other)
+        else : 
+            return (ommited, 1, repeated, exchange, other)
 
     if(len(sol)==1):
         sol=removing_special_characters(sol)
