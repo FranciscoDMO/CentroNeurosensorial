@@ -11,7 +11,7 @@ para terminar é só preciso fazer
 # projeto-uminho
 
 
-![alt text](https://imgur.com/Nbg1plQ)
+[Imgur](https://imgur.com/Nbg1plQ)
 
 
 ![alt text](https://imgur.com/Vq54LNQ)
