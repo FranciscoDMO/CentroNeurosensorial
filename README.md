@@ -11,13 +11,13 @@ para terminar é só preciso fazer
 # projeto-uminho
 
 
-[Imgur](https://imgur.com/Nbg1plQ)
+[Pacientes](https://imgur.com/Nbg1plQ)
 
 
-![alt text](https://imgur.com/Vq54LNQ)
+[Detalhes Pacientes](https://imgur.com/Vq54LNQ)
 
-![alt text](https://imgur.com/AihL8es)
+[Testes](https://imgur.com/AihL8es)
 
-![alt text](https://imgur.com/qVdq6yB)
+[Detalhes Testes](https://imgur.com/qVdq6yB)
 
-![alt text](https://imgur.com/dzG8U0b)
+[Realizar Testes](https://imgur.com/dzG8U0b)
